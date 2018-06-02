@@ -11,6 +11,13 @@ The operations support floating point.
 
 ## Installation
 
+from terminal,
+```
+npm i stringy_numbers
+
+```
+to import..
+
 ```
 const {mult,div,add,minus} = require('_path_')
 
@@ -35,7 +42,7 @@ mult("1234","5678");
 
 
   **div()** takes a number as its first argument, this sets the precision number 
-          of significant figures for the answer, the next two arguments are the 
+          of significant digits  for the answer, the next two arguments are the 
           dividend and divisor in that order, entered as strings.
 __e.g__
 
