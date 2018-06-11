@@ -1,6 +1,6 @@
 {
   "name": "stringy_numbers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"Math operations on very large floating point numbers using strings\"",
   "main": "stringy_numbers.js",
   "scripts": {
