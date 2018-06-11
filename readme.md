@@ -1,6 +1,6 @@
 # Stringy Numbers
 
-see [string_numbers repo](https://github.com/aminkhandesign/stringy_numbers)
+see [stringy_numbers repo](https://github.com/aminkhandesign/stringy_numbers) on github
 
 
 ## Introduction
