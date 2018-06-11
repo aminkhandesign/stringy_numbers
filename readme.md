@@ -19,21 +19,27 @@ npm i stringy_numbers
 to import..
 
 ```
-const {mult,div,add,minus} = require('_path_')
+const {mult,div,add,minus,squared,cubed} = require('path/to/node_modules/stringy_numbers')
 
 ```
 
 ## Functions
 
-As of version 1.0.0 there are four basic maths operations available: 
+As of version 1.0.1 there are four basic maths operations available: 
 
 -**mult()**  - _multiplication_,
 -**div()**   - _division_,
 -**add()**   - _addition_,
--**minus()** - _substraction_
+-**minus()** - _subtraction_
+
+And now sqaured and cubed functions added:
+
+-**squared()** - _find the square of a number_
+-**cubed()** - _find the cube of a number_
 
   **mult()** takes two string numbers as arguments, multiplies them together 
             and returns the result as a string
+
  __e.g__
 ```
 mult("1234","5678");

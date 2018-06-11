@@ -496,8 +496,11 @@ return [num,denom,mag];
 
 
 
-function div(precision=100, ...args){ 
+function div(precision=30, ...args){ 
   let final = [];
+  if (typeof precision!=='number'){
+    throw new Error("First argument should be a number")
+  }
   let prec=precision;
   let set1=validate(args[0]);
   let set2=validate(args[1]);
@@ -611,6 +614,20 @@ function div(precision=100, ...args){
   return final;
 }
 
+
+/*------------------------------END OF VERSION 1.0.0-----------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+/*------------------------------SQUARE AND CUBED FUNCTION------------------------------*/
+function squared(str_num){
+  return mult(str_num,str_num)
+}
+function cubed(str_num){
+  let x = mult(str_num,str_num);
+  return mult(str_num,x)
+}
+
+
 /*--------------TEST() TAKES TWO NUMBERS, CONSOLE.LOGS RESULTS OF MATH OPERATIONS COMAPRED TO RESULTS FROM NATIVE JS MATH ----------------*/
 /*---------------------------------------------------------test function------------------------------------------------------------------*/
 function test(x,y){
@@ -631,11 +648,10 @@ function test(x,y){
   console.log(`NATIVE JS: ${x/y}`)
 }
 
-module.exports.mult = mult
-module.exports.div = div
-module.exports.minus = minus
-module.exports.add = add
-module.exports.test = test
-
-
-
+module.exports.mult = mult;
+module.exports.div = div;
+module.exports.minus = minus;
+module.exports.add = add;
+module.exports.test = test;
+module.exports.squared = squared;
+module.exports.cubed = cubed;
